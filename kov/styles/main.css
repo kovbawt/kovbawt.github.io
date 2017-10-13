@@ -1,0 +1,380 @@
+@import url('https://fonts.googleapis.com/css?family=Squada+One');
+
+@font-face {
+  font-family: Milionaire DEMO;
+  src: url(../fonts/milionaire.ttf);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+/*===== Header Style =====*/
+
+.header {
+  width: 100%;
+  background: #ffffff;
+  opacity: 0.7;
+  position: fixed;
+  z-index: 3;
+}
+
+.header-content {
+  max-width: 1300px;
+  height: 150px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header-logo {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header-logo-icon {
+  width: 500px;
+  height: 150px;
+  background-image: url(../images/warthunder-logo.png);
+  margin-left: -100px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.header-menu {
+  margin-right: 150px;
+  font-size: 50px;
+  flex-grow: 1;
+  font-family: 'Milionaire DEMO', sans-serif;
+  display: flex;
+  justify-content: center;
+}
+
+
+.header-menu-link {
+  color: #000000;
+  padding: 10px;
+}
+
+.header-menu-link:hover {
+  color: #990000;
+}
+
+/*===== Dropdown Style =====*/
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+  background: none;
+}
+
+.dropbtn {
+  color: #000000;
+  padding: 10px;
+  font-size: 50px;
+  font-family: 'Milionaire DEMO', sans-serif;
+  border: none;
+  cursor: pointer;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  min-width: 220px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 0px 10px 0px 10px;
+  font-size: 26px;
+  background-color: #ffffff;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {
+  color: #990000;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.dropdown:hover .dropbtn {
+  color: #990000;
+}
+
+/*===== Social Style =====*/
+
+.header-social {
+  font-size: 35px;
+  display: flex;
+  margin-right: 70px;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header-social-link {
+  width: 30px;
+  height: 30px;
+  padding: 0 5px 0 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.header-fa {
+  color: #000000;
+}
+
+.header-fa:hover {
+  color: #990000;
+}
+
+/*===== Main Style =====*/
+
+.main {
+  width: 100%;
+  z-index: 2;
+}
+
+.main-parallax {
+  width: 100%;
+  height: 100%;
+  background-image: url(../images/warthunder-bg.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: fixed;
+  z-index: -1;
+}
+
+.main-content1 {
+  width: 100%;
+  height: 1100px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.main-content1-link1 {
+  color: #ffffff;
+  font-size: 50px;
+  font-family: 'Milionaire DEMO', sans-serif;
+  background-color: #990000;
+  padding: 10px 30px 10px 30px;
+  border-radius: 5px;
+}
+
+.main-content1-link1:hover {
+  background-color: #cc0000;
+}
+
+.main-content1-link2 {
+  color: #ffffff;
+  font-size: 50px;
+  font-family: 'Milionaire DEMO', sans-serif;
+  background-color: #004d1a;
+  padding: 10px 30px 10px 30px;
+  border-radius: 5px;
+  margin-top: 10px;
+}
+
+.main-content1-link2:hover {
+  background-color: #006622;
+}
+
+.main-content2 {
+  width: 100%;
+  display: flex;
+  padding-top: 200px;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.main-content2-box {
+  width: 1000px;
+  height: 400px;
+  margin-left: 180px;
+  background: #000000;
+  opacity: 0.7;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.main-content2-title {
+  color: #ffffff;
+  font-size: 40px;
+  font-weight: lighter;
+  font-family: 'Milionaire DEMO', sans-serif;
+  text-align: center;
+  margin-top: 30px;
+
+}
+
+.main-content2-text {
+  color: #ffffff;
+  font-size: 27px;
+  font-weight: lighter;
+  font-family: 'Squada One', cursive;
+  text-align: justify;
+  margin-left: 50px;
+  margin-right: 50px;
+}
+
+.box {
+  width: 100%;
+  height: 100px;
+}
+
+.main-content3 {
+  max-width: 1000px;
+  height: 800px;
+  margin: 0 auto;
+}
+
+.main-content3-title {
+  font-size: 40px;
+  color: #ffffff;
+  background-color: #000000;
+  text-align: center;
+  opacity: 0.7;
+  font-weight: lighter;
+  font-family: 'Milionaire DEMO', sans-serif;
+  margin-top: 100px;
+}
+
+.content3-box {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 50px;
+}
+
+.main-content4 {
+  width: 100%;
+  height: 800px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/*.hover-gallery {
+  width: 1000px;
+  height: 700px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.gallery-box {
+  width: 1000px;
+  height: 400px;
+  margin-top: 100px;
+  justify-content: center;
+  background: #000000;
+  opacity: 0.8;
+}*/
+
+/*.gallery-box::before {
+  width: 1000px;
+  height: 400px;
+  margin-top: 100px;
+  justify-content: center;
+  background: #000000;
+}*/
+
+/*.screen-title {
+  color: #ffffff;
+  font-size: 40px;
+  font-weight: lighter;
+  font-family: 'Milionaire DEMO', sans-serif;
+  text-align: center;
+  margin-top: 30px;
+}
+
+.hover-gallery img {
+  width: 300px;
+  height: 150px;
+  -webkit-transform:scale(0.8);
+  -moz-transform:scale(0.8);
+  -o-transform:scale(0.8);
+  -webkit-transition-duration: 0.5s;
+  -moz-transition-duration: 0.5s;
+  -o-transition-duration: 0.5s;
+  margin: 0 10px 5px 0;
+  opacity: 1;
+}
+
+.hover-gallery img:hover {
+  -webkit-transform:scale(1.1);
+  -moz-transform:scale(1.1);
+  box-shadow:0px 0px 30px gray;
+  -webkit-box-shadow:0px 0px 30px gray;
+  -moz-box-shadow:0px 0px 30px gray;
+  opacity: 1;
+}
+
+
+.wall-gallery {
+  width: 1000px;
+  height: 700px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}*/
+
+/*===== Footer Style =====*/
+
+.footer {
+  width: 100%;
+  height: 70px;
+  background: #000000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0.7;
+}
+
+/*.svastone {
+  width: 60px;
+  height: 60px;
+  animation: logo-icon 5s linear infinite;
+}
+
+@keyframes logo-icon {
+  from {}
+  to {transform: rotateZ(360deg);}
+}*/
+
+.footer-logo {
+  width: 60px;
+  height: 60px;
+}
+
+.footer-text {
+  color: #ffffff;
+  font-size: 25px;
+  font-weight: lighter;
+  font-family: 'Squada One', cursive;
+}
+
+
+.footer-link:hover {
+  color: #990000;
+}

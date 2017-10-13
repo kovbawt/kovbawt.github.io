@@ -1,0 +1,3 @@
+$(function() {
+	$('.wall-gallery').createSimpleImgGallery();
+});
